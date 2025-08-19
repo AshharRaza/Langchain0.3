@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@langchain/core": "^0.3.72",
+    "@langchain/google-genai": "^0.2.16",
+    "dotenv": "^17.2.1",
+    "langchain": "^0.3.31"
+  },
+  "name": "langchain0.3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
