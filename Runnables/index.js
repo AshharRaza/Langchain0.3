@@ -10,6 +10,6 @@ const model = new ChatGoogleGenerativeAI({
     apiKey:process.env.API_KEY
 })
 
-const chain = model.pipe(prompt).pipe(new StringOutputParser())
+const chain = prompt.pipe(model).pipe(new StringOutputParser())
 const result = await chain.invoke({topic:'cricket'})
 console.log(result)

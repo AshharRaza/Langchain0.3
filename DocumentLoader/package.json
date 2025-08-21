@@ -1,0 +1,20 @@
+{
+  "name": "documentloader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@langchain/community": "^0.3.53",
+    "@langchain/core": "^0.3.72",
+    "@langchain/google-genai": "^0.2.16",
+    "dotenv": "^16.4.5",
+    "langchain": "^0.3.31",
+    "pdf-parse": "^1.1.1"
+  }
+}

@@ -10,7 +10,7 @@ const model = new ChatGoogleGenerativeAI({
     model:'gemini-2.0-flash',
     apiKey:process.env.GEMINI_API_KEY
 })
-
+// const prompt = ChatPromptTemplate.fromTemplate("Tell a joke about {topic}")
 const prompt = ChatPromptTemplate.fromMessages([
 
      ["system",systemTemp],
@@ -21,8 +21,6 @@ const prompt = ChatPromptTemplate.fromMessages([
 const promptValue = await prompt.invoke({
     language:"English",
     text:"kaisa bhai"
-
-
 })
 const result = promptValue.toChatMessages()
 const res = await model.invoke(result)
