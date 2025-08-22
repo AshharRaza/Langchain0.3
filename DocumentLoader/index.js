@@ -10,6 +10,7 @@ const splitter = new RecursiveCharacterTextSplitter({
     chunkOverlap:50
 
 })
+// console.log(splitter)
 const text = await splitter.splitDocuments(docs)
 console.log(text)
 
